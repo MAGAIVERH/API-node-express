@@ -5,7 +5,7 @@ const router = express.Router()
 router.post('/cadastro', (req, res) => {
     const user = req.body
 
-    return res.status(200).json({message: "Cadastro Feito com Sucesso!!!"})
+    return res.status(201).json(user)
 })
 // Rota Login
 
